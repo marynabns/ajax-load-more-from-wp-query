@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
+<?php get_header(); ?>
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -34,3 +25,5 @@
     </div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php get_footer(); ?>
